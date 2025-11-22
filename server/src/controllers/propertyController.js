@@ -4,7 +4,7 @@ import propertyService from "../services/property.service.js";
 const { successResponse } = responseHandler;
 
 
-  export const getAllProperties = async (req, res, next) => {
+  export const getAllProperties = tryCatchFn ( async (req, res, next) => {
     try {
       const {
         page = 1,
@@ -37,7 +37,7 @@ const { successResponse } = responseHandler;
     } catch (error) {
       next(error);
     }
-  };
+  });
 
   export const newProperty = tryCatchFn(async (req, res, next) => {
     const property = await propertyService.create(req.body, next);

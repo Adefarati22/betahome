@@ -39,11 +39,6 @@ const userSchema = new Schema(
     avatarId: {
       type: String,
     },
-    // role: {
-    //   type: String,
-    //   enum: ["investor", "admin"], //predefined options that must be selected
-    //   default: "investor",
-    // },
     isVerified: {
       type: Boolean,
       default: false,
