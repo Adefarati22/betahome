@@ -23,7 +23,6 @@ export default function Card() {
       hasMore: data?.data?.meta?.hasMore || false,
       currentPage: data?.data?.meta?.currentPage || 1,
   });
-  console.log("prop", data);
   
 
   if (isPending) return <SkeletonCard />;

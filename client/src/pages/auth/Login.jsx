@@ -40,7 +40,6 @@ export default function Login() {
 
   const onSubmit = async (data) => {
     mutation.mutate(data);
-    console.log("login",data);
     
   };
   return (

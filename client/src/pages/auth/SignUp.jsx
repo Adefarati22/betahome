@@ -43,7 +43,6 @@ export default function SignUp() {
 
   const onSubmit = async (data) => {
     mutation.mutate(data); 
-    console.log("signup", data);
     
   };
   return (

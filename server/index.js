@@ -21,6 +21,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:4900",
+      "https://betahome-client-sandy.vercel.app"
     ], //allow request from client address
     credentials: true, //allow cookie to be sent
     methods: ["GET", "POST", "PATCH", "DELETE", "OPTIONS"], //permitted http methods
