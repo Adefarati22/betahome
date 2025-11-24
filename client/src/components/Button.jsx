@@ -14,7 +14,7 @@ export default function NavbarUserActions() {
       <div>
         <Link
           to="/account/signup"
-          className="border-white border-2 text-white rounded-md px-2 md:px-8 py-3 text-sm font-medium hover:bg-white hover:text-(--primary-color) transition-colors"
+          className="border-white border-2 text-white rounded-md p-2 md:px-8 md:py-3 text-sm font-medium hover:bg-white hover:text-(--primary-color) transition-colors"
         >
           Sign Up
         </Link>

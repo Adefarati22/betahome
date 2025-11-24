@@ -13,8 +13,8 @@ export const getAuthenticatedUser = async (accessToken) => {
 };
 
 export const refreshAccessToken = async () => {
-  return await axiosInstance.post("/auth/refresh-token", {
-    withCredentials: true, //inject cookie value automatically to the server
+  return await axiosInstance.post("/auth/refresh-token", {}, {
+    withCredentials: true,
   });
 };
 

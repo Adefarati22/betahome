@@ -24,7 +24,7 @@ export default function Carousel() {
 
   return (
     <div className="mt-10 relative w-full">
-      <h1 className="text-center text-5xl font-bold text-black">
+      <h1 className="text-center text-xl md:text-5xl font-bold text-black">
         Discover Our Popular Properties
       </h1>
 
