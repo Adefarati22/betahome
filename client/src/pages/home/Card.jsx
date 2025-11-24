@@ -30,14 +30,14 @@ export default function Card() {
 
 
   return (
-    <div className="bg-white px-20 mx-auto py-20 mt-40">
-      <div className="grid grid-cols-12 lg:grid-cols-4 gap-6 mt-10">
+    <div className="bg-white px-5 md:px-20 md:mx-auto py-20 mt-40">
+      <div className="grid md:grid-cols-12  lg:grid-cols-4 md:gap-6 mt-10">
         {data?.data?.properties?.length > 0 ? (
           data?.data?.properties?.map((item) => (
             <PropertyCard
               key={item._id}
               id={item._id}
-              image={item.images || "/placeholder.jpg"}
+              image={item.images || "no image to display"}
               title={item.title}
               location={item.location}
               bedrooms={item.bedrooms}

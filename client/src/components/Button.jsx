@@ -14,13 +14,13 @@ export default function NavbarUserActions() {
       <div>
         <Link
           to="/account/signup"
-          className="border-white border-2 text-white rounded-md px-8 py-3 text-sm font-medium hover:bg-white hover:text-(--primary-color) transition-colors"
+          className="border-white border-2 text-white rounded-md px-2 md:px-8 py-3 text-sm font-medium hover:bg-white hover:text-(--primary-color) transition-colors"
         >
           Sign Up
         </Link>
         <Link
           to="/account/login"
-          className="bg-(--primary-color) text-white rounded-md ml-4 px-8 py-3 text-sm font-medium hover:bg-(--secondary-color) transition-colors"
+          className="bg-(--primary-color) text-white rounded-md ml-4 px-2 md:px-8 py-3 text-sm font-medium hover:bg-(--secondary-color) transition-colors"
         >
           Login
         </Link>

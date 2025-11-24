@@ -4,7 +4,7 @@ import { NavLink } from "react-router";
 export default function Nav() {
   return (
     <>
-      <nav className="p-4 flex items-center justify-center gap-15 font-medium text-xl">
+      <nav className="p-4 hidden md:flex items-center justify-center gap-15 font-medium text-xl">
         <NavLink
           to={"#"}
           className={({ isActive }) =>

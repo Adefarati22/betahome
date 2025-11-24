@@ -29,7 +29,6 @@ export default function Carousel() {
       </h1>
 
       <div className="relative mt-6">
-        {/* Show loader while fetching */}
         {isPending && <LazyLoader />}
         {isError && <ErrorAlert error={error}/>}
 
@@ -44,7 +43,7 @@ export default function Carousel() {
                 key={prop._id}
               >
                 <img
-                  src={prop.images || "/placeholder.jpg"}
+                  src={prop.images || "no image to display"}
                   alt={prop.title}
                   className="w-full h-[350px] object-cover"
                 />
@@ -72,15 +71,15 @@ export default function Carousel() {
         </div>
 
         {/* Arrows */}
-        <div className="hidden lg:block">
+        <div className="block">
           <button
-            className="absolute top-[40%] left-0 bg-gray-300 text-white rounded-full p-3 shadow hover:bg-black cursor-pointer transition-colors"
+            className="absolute top-[40%] left-0 bg-gray-300 text-white rounded-full p-3 shadow hover:bg-green-500 cursor-pointer transition-colors"
             onClick={() => scrollFn("left")}
           >
             <RiArrowLeftLine size={26} />
           </button>
           <button
-            className="absolute top-[40%] right-0 bg-gray-300 text-white rounded-full p-3 shadow hover:bg-black cursor-pointer transition-colors"
+            className="absolute top-[40%] right-0 bg-gray-300 text-white rounded-full p-3 shadow hover:bg-green-500 cursor-pointer transition-colors"
             onClick={() => scrollFn("right")}
           >
             <RiArrowRightLine size={26} />
