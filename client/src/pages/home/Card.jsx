@@ -31,7 +31,7 @@ export default function Card() {
 
   return (
     <div className="bg-white px-5 md:px-20 md:mx-auto py-20 mt-40">
-      <div className="grid md:grid-cols-12  lg:grid-cols-4 md:gap-6 mt-10">
+      <div className="grid sm:grid-cols-12 md:grid-cols-2  lg:grid-cols-4 md:gap-6 mt-10">
         {data?.data?.properties?.length > 0 ? (
           data?.data?.properties?.map((item) => (
             <PropertyCard
